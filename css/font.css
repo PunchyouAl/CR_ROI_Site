@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Bitter:700&display=swap');
+
+@font-face {
+  font-family: 'GothamBold';
+  src: url('../fonts/GothamBold/Gotham-Bold.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/GothamBold/Gotham-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/GothamBold/Gotham-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/GothamBold/Gotham-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/GothamBold/Gotham-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/GothamBold/Gotham-Bold.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'GothamBook';
+  src: url('../fonts/GothamBook/Gotham-Book.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/GothamBook/Gotham-Book.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/GothamBook/Gotham-Book.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/GothamBook/Gotham-Book.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/GothamBook/Gotham-Book.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/GothamBook/Gotham-Book.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+* {
+    font-family: 'GothamBook', sans-serif;
+}
+
+h1 {
+    font-family: 'GothamBold', sans-serif!important;
+    color: #ffffff;
+    font-size: 60px;
+    text-align: center;
+    max-width: 100%;
+    margin:auto;
+    line-height: 1;
+}
+
+h2 {
+    font-family: 'Bitter', serif;
+    font-weight: 700;
+}
+
+h3 {
+    font-family: 'Bitter', serif;
+    font-weight: 700;
+}
+
+p {
+    color: #575756;
+    font-size: 20px;
+}
+
+p span.superBitter {
+    font-family: 'Bitter', serif;
+    font-size: 72px;
+    color: #b14191;
+}
+
+span.statBitter {
+    font-family: 'Bitter', serif;
+    font-size: 50px;
+}
+
+span.statBitter {
+    font-family: 'Bitter', serif;
+    font-size: 50px;
+}
