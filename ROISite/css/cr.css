@@ -63,6 +63,11 @@ html {
     padding: 0 20px;
 }
 
+
+#sectionOne #logos .logoContainer img {
+    max-height: 115px;
+}
+
 #sectionOne #logos .logoContainer:first-child {
     border-right: 1px solid #ffffff;
 }
@@ -139,15 +144,15 @@ html {
 #sectionTwo #laptopOuter img:first-child {
 
     max-width: 80%;
-    transform: rotate3d(1, 0, 0, 0deg);
+    transform: rotate3d(1, 0, 0, -60deg);
     transform-origin: bottom;
-    transition-duration: 1s;
+    filter: brightness(0.1);
     transition-timing-function: ease-in-out;
     position: relative;
 
 }
 
-#sectionTwo #laptopOuter img:after {
+#sectionTwo #laptopOuter img:first-child:after {
 
     content: '';
     position: absolute;
@@ -159,16 +164,25 @@ html {
 
 }
 
+/*
 #sectionTwo #laptopOuter.closed img:first-child {
 
     transform: rotate3d(1, 0, 0, -60deg);
     transform-origin: bottom;
 
 }
+*/
 
 #sectionTwo #revenueText {
 
     margin: 160px 0;
+
+}
+
+#sectionTwo #revenueNumber span {
+
+    position: relative;
+    font-family: inherit;
 
 }
 
@@ -323,7 +337,7 @@ html {
 
 #sectionThree #statsHolder svg circle {
     will-change: stroke-dasharray;
-    transition: stroke-dasharray 2s ease-in;
+/*    transition: stroke-dasharray 2s ease-in;*/
     stroke-dashoffset: 0;
     stroke-dasharray: 0 999;
     /*    animation: dash 5s linear forwards;*/
@@ -355,7 +369,7 @@ html {
     height: 100%;
     width: 100%;
     z-index: -1;
-    background-image: url(https://media.giphy.com/media/hqIaXesRGpP44/giphy.gif);
+    background-image: linear-gradient(45deg, rgba(177, 65, 145, 0.7), rgba(177, 65, 145, 0.7)), url(https://media.giphy.com/media/hqIaXesRGpP44/giphy.gif);
     background-size: cover;
     transform: skewY(5deg);
     transform-origin: right;
@@ -467,9 +481,20 @@ html {
 
 }
 
+#sectionFive .sectionSafeContent {
+
+    padding: 110px 0 70px;
+}
+
 #sectionFive h1 {
 
     color: #B14191;
+
+}
+
+#sectionFive p {
+
+    color: #ffffff;
 
 }
 
@@ -514,9 +539,10 @@ html {
 #sectionFive #outerUsers #images img:nth-child(1) {
 
     width: 70%;
-    top: 90%;
-    left: -23%;
+    top: 80%;
+    left: -50%;
     z-index: 3;
+    opacity: 0;
 
 }
 
@@ -525,14 +551,16 @@ html {
     max-width: 100%;
     top: 0;
     left: 0;
+    transform: scale(0.8);
 
 }
 
 #sectionFive #outerUsers #images img:nth-child(3) {
 
     max-width: 30%;
-    top: 80%;
+    top: 0;
     right: -33px;
+    opacity: 0;
 
 }
 
@@ -567,7 +595,7 @@ html {
 
 #sectionFive #statsHolder svg circle {
     will-change: stroke-dasharray;
-    transition: stroke-dasharray 2s ease-in;
+/*    transition: stroke-dasharray 2s ease-in;*/
     stroke-dashoffset: 0;
     stroke-dasharray: 0 999;
     /*    animation: dash 5s linear forwards;*/
@@ -640,6 +668,7 @@ html {
     background-image: url(../img/ROI_beach-11.png);
     background-size: cover;
     background-position: 90%;
+    background-repeat: no-repeat;
     height: 120vh;
     z-index: -2;
 
@@ -660,10 +689,10 @@ html {
 
 }
 
-#sectionSeven #analysisText > *  {
+#sectionSeven #analysisText > * {
 
 
-    margin: 0 auto 50px ;
+    margin: 0 auto 50px;
 
 }
 
